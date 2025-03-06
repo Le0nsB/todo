@@ -12,8 +12,13 @@ Route::get('/why', function () {
 });
 
 Route::get('/todos', [ToDoController::class, 'index']);
+Route::get('/todos/create', [ToDoController::class, 'create']);
+Route::get('/todos/{todo}', [ToDoController::class, 'show']);
+Route::post('/todos', [ToDoController::class, 'store']);
 
 Route::get('/diaries', [DiaryController::class, 'index']);
-
-Route::get('/todos/{todo}', [ToDoController::class, 'show']);
+Route::get('/diary/create', [DiaryController::class, 'create']);
+Route::get('/diaries/{diary}', [DiaryController::class, 'show']);
+Route::post('/diary', [DiaryController::class, 'store']);
       
+

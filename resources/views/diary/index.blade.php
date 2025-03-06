@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dienasgramata</title>
-</head>
-<body>
-</body>
-</html>
+<x-layout>
+    <x-slot:title>Dienasgramata</x-slot:title>
+    <ul>
+        @foreach ($diary as $diary2)
+        <li><a class="list "href="/diaries/{{ $diary2->id }}">{{ $diary2->title }}</a></li>
+        @endforeach 
+    </ul>
+</x-layout>
