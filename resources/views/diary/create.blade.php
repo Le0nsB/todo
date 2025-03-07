@@ -2,13 +2,13 @@
     <x-slot:title>Izveidot uzdevumu</x-slot:title>
     <h1>Izveidot uzdevumu</h1>
 
-    <form method="POST" action="/diary">
+    <form method="POST" action="/diary" class="create">
         @csrf
-        <input name="title" />
+        <input name="title" placeholder="Tituls"/>
         @error("title")
             <p>{{ $message }}</p>
         @enderror
-        <textarea name="body"></textarea>
+        <textarea name="body" placeholder="Saturs"></textarea>
         @error("body")
             <p>{{ $message }}</p>
         @enderror

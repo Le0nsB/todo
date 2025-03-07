@@ -15,6 +15,8 @@ Route::get('/todos', [ToDoController::class, 'index']);
 Route::get('/todos/create', [ToDoController::class, 'create']);
 Route::get('/todos/{todo}', [ToDoController::class, 'show']);
 Route::post('/todos', [ToDoController::class, 'store']);
+Route::get('/todos/{todo}/edit', [ToDoController::class, 'edit']);
+Route::put('/todos/{todo}', [ToDoController::class, 'update']);
 
 Route::get('/diaries', [DiaryController::class, 'index']);
 Route::get('/diary/create', [DiaryController::class, 'create']);

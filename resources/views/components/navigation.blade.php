@@ -5,6 +5,7 @@
             <li><a href="/todos">Visi uzdevumi</a></li>
             <li><a href="/diaries">Dienasgrāmata</a></li>
             <li><a href="/todos/create">Izveidot</a></li>
+            <li><a href="/diary/create">Izveidot dg</a></li>
         </ul>
     </nav>
 </header>

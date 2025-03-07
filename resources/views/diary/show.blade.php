@@ -4,5 +4,5 @@
     </x-slot:title>
     <h1>{{ $diary->title }}</h1>
     <p>{{ $diary->body}}</p>
-    <p>Izpildīts: {{ $diary->date}}</p>
+    <p>{{ $diary->date}}</p>
 </x-layout>
